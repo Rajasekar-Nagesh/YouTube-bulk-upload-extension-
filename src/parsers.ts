@@ -80,7 +80,7 @@ export async function parseMetadata(file: File): Promise<Map<string, { title: st
     };
     const title = field('TITLE');
     const description = field('DESCRIPTION');
-    const tags = field('TAGS').split(/[ ,\n]/).map(tag => tag.trim()).filter(Boolean);
+        const tags = field('TAGS').split(/[,\n]/).map(tag => tag.trim()).filter(Boolean);
     if (!title) throw new Error(`Word document: missing TITLE for ${filename}.`);
     map.set(filename.toLowerCase(), { title, description, tags });
   }
