@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Bulk Uploader & Scheduler",
+  "version": "1.1.2",
+  "description": "Bulk upload and schedule YouTube videos from an Excel schedule and Word metadata document.",
+  "permissions": ["identity", "storage", "unlimitedStorage", "identity.email"],
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://youtube.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open YouTube Bulk Uploader"
+  },
+  "oauth2": {
+    "client_id": "988128745992-2l31ktr76ipeufndoscc2e5baovtu5ji.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube.upload",
+      "https://www.googleapis.com/auth/youtube.readonly"
+    ]
+  }
+}
