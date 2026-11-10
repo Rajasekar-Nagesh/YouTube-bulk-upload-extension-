@@ -3,7 +3,7 @@
   "name": "YouTube Bulk Uploader & Scheduler",
   "version": "1.1.2",
   "description": "Bulk upload and schedule YouTube videos from an Excel schedule and Word metadata document.",
-  "permissions": ["identity", "storage", "unlimitedStorage", "identity.email"],
+  "permissions": ["identity", "storage", "unlimitedStorage", "identity.email", "tabs"],
   "host_permissions": [
     "https://www.googleapis.com/*",
     "https://youtube.googleapis.com/*"
